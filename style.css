@@ -1,0 +1,139 @@
+#container {
+    margin: 30px auto;
+    background-color: #ffffff;
+    clear:both;
+    padding: 30px;
+    left: 0;
+    right: 0;
+    border: 2px solid grey;
+    width: 960px;
+
+
+}
+/*
+.name {
+    width: 65%;
+    float: left;
+    margin: 0px;
+    margin-left: 2px;
+}
+
+.contact {
+    position: relative;
+    z-index: 200;
+    width: 34%;
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+
+}
+
+.annoying {
+    background-color: rgb(151, 137, 151);
+    height: 420px;
+    clear: right;
+}
+*/
+* {
+    box-sizing: border-box;
+ 
+    padding: 0; margin: 0;
+  }
+/* Style navigation menu links */
+
+
+#headerwrapper {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 960px;
+    line-height: 80px;
+    text align: center;
+
+}
+#name {
+    background-color: lightblue;
+    float: left;
+    width: 25%;
+    color: white;
+
+}
+/*-- span is inline use after nav , create span id="middleNavSpan">Portfolio</> */
+
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: 3px;
+    border-bottom-color: darkslategrey;
+}
+/* Changes the way links look on nav menu */
+.topnav a {
+    float: right;
+    display: block;
+    color: #666;
+    text-align: center;
+    text-decoration-color: rgb(76, 77, 78);
+    padding: 12px 14px;
+    font-size: 16px;
+}
+/* hover color on nav menu */
+.topnav a: hover {
+    background-color: #eee;
+    color: #f3f3f3;
+}
+
+.topnav a.active {
+    background-color: rgb(42, 178, 219);
+    color: #000;
+}
+/* Hide active link */
+.topnav .icon {
+    display: none;
+}
+/*creating an active class to show what page we are on */
+.active {
+    background-color: red;
+    color: black;
+}
+
+
+
+body {
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+  width: 100%;
+}
+
+header {
+  color: #333;
+  background: #ccc;
+  border-bottom: 5px;
+  border-bottom-color: #333;
+}
+/*
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+*/
+
+/*
+aside {
+  float: left;
+  width: 33%;
+  height: 200px;
+  padding: 20px;
+  margin-left: 30px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+*/
+footer {
+  padding: 20px;
+  clear: both;
+  background: #ccc;
+  width: 960px;
+  border: 2px solid blue;
+}
