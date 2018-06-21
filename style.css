@@ -7,14 +7,10 @@
     right: 0;
     border: 2px solid grey;
     width: 960px;
-  
-
-
 }
 
 * {
     box-sizing: border-box;
- 
     padding: 0; margin: 0;
   }
 /* Style navigation menu links */
@@ -25,7 +21,7 @@
     right: 0;
     margin: auto;
     width: 960px;
-    line-height: 50px;
+    line-height: 30px;
     text-align: center;
 
 }
@@ -35,7 +31,7 @@
     float: left;
     width: 27%;
     color: white;
-    padding: 28px;
+
     font-size: 24px;
 
     position: absolute;
@@ -49,11 +45,11 @@
     background-color: #fff;
     overflow: hidden;
     border-bottom: 3px solid;
+    height: 42px;
     border-bottom-color: #dddddd;
 }
 /* Changes the way links look on nav menu */
 .topnav a {
-    display: block;
     color: #666;
     text-align: center;
     text-decoration-color: rgb(76, 77, 78);
@@ -67,9 +63,12 @@
     color: #000000;
 }
 
-.topnav a.active {
+.topnav a:active {
     background-color: #4aaaa5;
     color: #000;
+}
+.topnav a:focus {
+    background-color: silver;
 }
 /* Hide active link */
 .topnav .icon {
@@ -77,7 +76,7 @@
 }
 /*creating an active class to show what page we are on */
 .active {
-    background-color: red;
+    background-color: #4aaaa5;
     color: black;
 }
 
@@ -87,11 +86,10 @@ h1 {
 
 li  
     {
-    float: right;
     display: inline;
     }
 li a {
-    display: block;
+    display: inline;
 }
 a {
     display: block;
@@ -99,7 +97,7 @@ a {
 }
 ul
     {
-        position: relative;
+        float: right;
     }
 
 body {
@@ -151,9 +149,6 @@ footer {
   font-size: 20px;
 }
 
-.copyright {
-
-}
 /**
 /**
  * Box set coding
@@ -161,50 +156,121 @@ footer {
 
  .box-set {
     display: flex;
-    flex-wrap: no-wrap;
+ 
     width: 100%;
   }
   
-  .box {
+  .box {    
     /* General settings for all 4 boxes*/
-    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     margin: 0;
-    padding: 0;
+    padding: 0; 
     flex-grow: 0;
-    border-radius: 1px;
-
+    border-radius: 0px;
     background: #fff;
     border: 2px solid black;
   }
-
   .box-1,.box-2,.box-3,.box-4 {
-      color: #000;
+      color: darkslategray;
       font-family: 'Noto Serif', serif;
       font-size: 16px;
-      display: inline;
   }
   
   /* Box rules: percentages define anchors (i.e. position of each box relative to enclosing box) */
   
   .box-1 {
       text-align: center;
+      position: relative;
       margin-right: 1%;
   }
   .box-2 {
     text-align: center;
+    position: relative;
     margin-right: 1%;
   }
-  
   .box-3 {
     text-align: center;
+    position: relative;
     margin-right: 1%;
   }
-  
   .box-4 {
     text-align: center;
+    position: relative;
     margin-right: 1%;
   }
-  
-  
+  button {
+    width: 100%;
+    position: relative;
+    background-color: lightslategray;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgb(61, 90, 124);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  button:hover {
+      background-color: green;
+  }
+  /* Container holding the image and the text */
+
+
+/* Bottom right text */
+/*
+.text-block {
+    position: absolute;
+    background-color: lightslategray;
+    color: white;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.text-block2 {
+    position: relative;
+    background-color: lightslategray;
+    color: white;
+    width: 100%;
+
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contactcontainer {
+    background-color: #eee;
+    padding: 2px;
+    border: 1px solid black;
+}
+/* Gives inputs style, hepls select elements and textbox */
+input[type=text], textarea {
+        box-sizing: border-box; /*Holds padding and width in fixed are */
+        width: 100%;
+        padding: 5px;
+        border: 3px solid #000000;
+        margin: 3px 3px 6px 6px;
+    }
+    /* styles submit button with background color */
+input[type=submit] {
+    background-color: #777777;
+    color: black;
+    padding: 12px;
+    border: 1px dashed #ddd;
+    cursor: pointer;
+}
+
+form {
+    background-color: #eee;
+    padding: 15px;
+    border: 5px solid black;
+    width: 100%;
+    height: 400px;
+}
